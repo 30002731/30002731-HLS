@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="HLS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HLS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="64" Stroke="Black" VerticalAlignment="Top" Width="360" Fill="#FF78CCE1" Grid.RowSpan="1"/>
+        <TextBlock Text="HOOK, LINE &amp; SINKER" FontSize="30" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="5" Margin="0,0,0,57" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+
+        <Rectangle Grid.ColumnSpan="5" Grid.Row="10" HorizontalAlignment="Left" Height="64" Stroke="Black" VerticalAlignment="Top" Width="360" Fill="#FF78CCE1" Grid.RowSpan="1"/>
+
+        <Image x:Name="btnLocation" Source="/Assets/locationButton.PNG" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="148" Margin="17,0,0,0" Grid.Row="5" VerticalAlignment="Center" Width="137" Tapped="btnLocation_Tapped"/>
+        <Image x:Name="btnIdenifier" Source="/Assets/identifierButton.PNG" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="148" Margin="0,0,17,0" Grid.Row="3" VerticalAlignment="Top" Width="137" Grid.RowSpan="2" Tapped="btnIdenifier_Tapped"/>
+        <Image x:Name="btnWarning" Source="/Assets/warningButton.PNG" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="148" Margin="0,0,17,0" Grid.Row="5" VerticalAlignment="Top" Width="137" Grid.RowSpan="2" Tapped="btnWarning_Tapped"/>
+        <Image x:Name="btnFish" Source="/Assets/fishButton.PNG" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="142" Margin="20,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="131" Tapped="btnFish_Tapped"/>
+
+        <Image x:Name="imgOctopus" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="58" Margin="5,0,0,5" Grid.Row="7" VerticalAlignment="Center" Width="53" Source="/Assets/Octopus.PNG"/>
+        <Image x:Name="imgLogo" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="87" VerticalAlignment="Center" Width="81" Source="/Assets/Final Logo NB.png" Tapped="imgLogo_Tapped"/>
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="100" Margin="235,54,0,0" Grid.RowSpan="3" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+
+
+    </Grid>
+</Page>
